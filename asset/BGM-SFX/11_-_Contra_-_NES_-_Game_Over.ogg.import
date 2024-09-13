@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/11_-_Contra_-_NES_-_Game_Over.ogg-3f87443023abbe0730d13fa9228b792e.oggstr"
+
+[deps]
+
+source_file="res://asset/BGM-SFX/11_-_Contra_-_NES_-_Game_Over.ogg"
+dest_files=[ "res://.import/11_-_Contra_-_NES_-_Game_Over.ogg-3f87443023abbe0730d13fa9228b792e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

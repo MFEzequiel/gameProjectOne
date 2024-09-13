@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/03_-_Contra_-_NES_-_Jungle.ogg-385b8bc713accdb3d913d5ea0654b0d5.oggstr"
+
+[deps]
+
+source_file="res://asset/BGM-SFX/03_-_Contra_-_NES_-_Jungle.ogg"
+dest_files=[ "res://.import/03_-_Contra_-_NES_-_Jungle.ogg-385b8bc713accdb3d913d5ea0654b0d5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

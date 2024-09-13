@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/10_-_Contra_-_NES_-_Stage_Clear.ogg-418331bcf965d48f5d0cbd5a6ce4e2e1.oggstr"
+
+[deps]
+
+source_file="res://asset/BGM-SFX/10_-_Contra_-_NES_-_Stage_Clear.ogg"
+dest_files=[ "res://.import/10_-_Contra_-_NES_-_Stage_Clear.ogg-418331bcf965d48f5d0cbd5a6ce4e2e1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

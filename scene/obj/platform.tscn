@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://asset/Legacy-Fantasy-VL.1 - High Forest - Update 1.5/Tiles/Assets.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 20.5, 4.5 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 724, 223, 21, 10 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 745, 223, 21, 10 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="platform" type="StaticBody2D"]
+
+[node name="col" type="CollisionShape2D" parent="."]
+position = Vector2( 10.5, 0.5 )
+shape = SubResource( 3 )
+one_way_collision = true
+
+[node name="sp" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+
+[node name="spr" type="AnimatedSprite" parent="."]
+position = Vector2( 21, 0 )
+frames = SubResource( 5 )

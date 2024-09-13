@@ -1,0 +1,267 @@
+[gd_scene load_steps=55 format=2]
+
+[ext_resource path="res://scripts/character/player.gd" type="Script" id=1]
+[ext_resource path="res://asset/Legacy-Fantasy-VL.1 - High Forest - Update 1.5/Character Update 0.1/Attack-01/Attack-01-Sheet.png" type="Texture" id=2]
+[ext_resource path="res://asset/Legacy-Fantasy-VL.1 - High Forest - Update 1.5/Character Update 0.1/Jumlp-All/Jump-All-Sheet.png" type="Texture" id=3]
+[ext_resource path="res://asset/Legacy-Fantasy-VL.1 - High Forest - Update 1.5/Character Update 0.1/Run/Run-Sheet.png" type="Texture" id=4]
+[ext_resource path="res://asset/Legacy-Fantasy-VL.1 - High Forest - Update 1.5/Character Update 0.1/Dead/Dead-Sheet.png" type="Texture" id=5]
+[ext_resource path="res://asset/Legacy-Fantasy-VL.1 - High Forest - Update 1.5/Character Update 0.1/Idle/Idle-Sheet.png" type="Texture" id=6]
+[ext_resource path="res://scene/analog/Analog.tscn" type="PackedScene" id=7]
+[ext_resource path="res://asset/button-texture/tool_sword_b.png" type="Texture" id=8]
+[ext_resource path="res://asset/button-texture/arrow_n.png" type="Texture" id=9]
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 96, 80 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 96, 0, 96, 80 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 192, 0, 96, 80 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 2 )
+region = Rect2( 288, 0, 96, 80 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 384, 0, 96, 80 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 480, 0, 96, 80 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 576, 0, 96, 80 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 2 )
+region = Rect2( 672, 0, 96, 80 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 80, 64 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 5 )
+region = Rect2( 80, 0, 80, 64 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 5 )
+region = Rect2( 160, 0, 80, 64 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 5 )
+region = Rect2( 240, 0, 80, 64 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 5 )
+region = Rect2( 320, 0, 80, 64 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 5 )
+region = Rect2( 400, 0, 80, 64 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 5 )
+region = Rect2( 480, 0, 80, 64 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 5 )
+region = Rect2( 560, 0, 80, 64 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 64, 80 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 6 )
+region = Rect2( 64, 0, 64, 80 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 6 )
+region = Rect2( 128, 0, 64, 80 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 6 )
+region = Rect2( 192, 0, 64, 80 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 3 )
+region = Rect2( 64, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 3 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 3 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=55]
+atlas = ExtResource( 3 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 3 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 3 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 3 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=59]
+atlas = ExtResource( 3 )
+region = Rect2( 512, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=60]
+atlas = ExtResource( 3 )
+region = Rect2( 576, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=61]
+atlas = ExtResource( 3 )
+region = Rect2( 640, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=62]
+atlas = ExtResource( 3 )
+region = Rect2( 704, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=63]
+atlas = ExtResource( 3 )
+region = Rect2( 768, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=64]
+atlas = ExtResource( 3 )
+region = Rect2( 832, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=65]
+atlas = ExtResource( 3 )
+region = Rect2( 896, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 80, 80 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 4 )
+region = Rect2( 80, 0, 80, 80 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 4 )
+region = Rect2( 160, 0, 80, 80 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 4 )
+region = Rect2( 240, 0, 80, 80 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 4 )
+region = Rect2( 320, 0, 80, 80 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 4 )
+region = Rect2( 400, 0, 80, 80 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 4 )
+region = Rect2( 480, 0, 80, 80 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 4 )
+region = Rect2( 560, 0, 80, 80 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "attack",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
+"loop": true,
+"name": "dead",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
+"loop": true,
+"name": "idle",
+"speed": 9.0
+}, {
+"frames": [ SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ), SubResource( 63 ), SubResource( 64 ), SubResource( 65 ) ],
+"loop": true,
+"name": "jump",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ) ],
+"loop": true,
+"name": "run",
+"speed": 12.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=66]
+extents = Vector2( 12, 11.5 )
+
+[node name="player" type="KinematicBody2D" groups=["Player"]]
+position = Vector2( 336, 160 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+gravity = 0.0
+
+[node name="spr" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "attack"
+frame = 1
+
+[node name="col" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 10.5 )
+shape = SubResource( 66 )
+
+[node name="jump_timer" type="Timer" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+limit_left = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+anchor_bottom = 1.0
+margin_right = 448.0
+
+[node name="Analog" parent="CanvasLayer/Control" instance=ExtResource( 7 )]
+position = Vector2( 144, 472 )
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 832, 456 )
+scale = Vector2( 4, 4 )
+normal = ExtResource( 9 )
+
+[node name="buttonAttack" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 704, 448 )
+scale = Vector2( 4, 4 )
+normal = ExtResource( 8 )
+
+[node name="Damaje" type="Area2D" parent="."]
+
+[node name="col" type="CollisionPolygon2D" parent="Damaje"]
+polygon = PoolVector2Array( 12, 22, 28, 22, 36, 14, 44, 6, 44, -26, 36, -34, 20, -42, 12, -42 )
+
+[connection signal="timeout" from="jump_timer" to="." method="_on_jump_timer"]
+[connection signal="pressed" from="CanvasLayer/TouchScreenButton" to="." method="bt_jump"]
+[connection signal="pressed" from="CanvasLayer/buttonAttack" to="." method="_on_buttonAttack_pressed"]
+[connection signal="body_entered" from="Damaje" to="." method="_Damaje_body_entered"]
